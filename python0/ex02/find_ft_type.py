@@ -1,14 +1,14 @@
 def all_thing_is_obj(object: any) -> int:
 	if isinstance(object, tuple):
-		print("Tuple: <class 'tuple'>")
+		print("Tuple : ", type(object))
 	elif isinstance(object, list):
-		print("List: <class 'list'>")
+		print("List : ", type(object))
 	elif isinstance(object, set):
-		print("List: <class 'set'>")
+		print("Set : ", type(object))
 	elif isinstance(object, dict):
-		print("List: <class 'dict'>")
+		print("Dict : ", type(object))
 	elif isinstance(object, str):
-		print("List: <class 'str'>")
+		print(object," : ", type(object))
 	else:
 		print("Type not found")
 	return 42
