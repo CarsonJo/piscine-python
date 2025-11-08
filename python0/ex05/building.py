@@ -1,7 +1,9 @@
 import sys
+"""Take a string as argument and print the number of character"""
 
 
 def start() -> str:
+    """check argument"""
     sys.tracebacklimit = 0
     if len(sys.argv) > 2:
         assert False, "more than one argument is provided"
@@ -39,4 +41,5 @@ def main():
     print(digits, "digits")
 
 
-main()
+if __name__ == "__main__":
+    main()
